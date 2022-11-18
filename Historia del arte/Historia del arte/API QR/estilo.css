@@ -1,0 +1,150 @@
+.titulos{
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+    background: #2c3e50;
+}
+.parrafo{
+    text-align: center;
+    color: antiquewhite;
+}
+.imagenes{
+    width: 40%;
+}
+.contenedor{
+    margin-left: 5%;
+    width: 40%;
+}
+.qr{
+    margin-left: 5%;
+}
+.casa{
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    }
+    
+    .lomo{
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;	
+    }
+    .image{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    }
+    
+    #mover{
+    position: absolute;
+    right: 600px;
+    
+    
+    }
+    
+    #leer{
+        color: black;
+        font-family: sans-serif;
+    }
+    
+    
+    
+    
+    
+    #numero{
+    width: 50px;
+    
+    height: 50px;
+    }
+    
+    .color{
+    background:-webkit-linear-gradient(lavender, gray);
+    
+    }
+    #letra{
+    color: orange;
+    
+    }
+    #grr{
+    color:red;
+    }
+    
+    #tono{
+    color: chartreuse;	
+    }
+    
+    
+    .borde{
+    border: solid;
+    border-color: red;
+    }
+    
+    .square{
+    position: relative;
+    width: 50%;
+    
+    }
+    .square:after{
+    content: '';
+    display: block;
+    padding-bottom: 50%;	
+    }
+    .contenido{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;	
+    }
+    
+    .cor{
+    color: yellow;	
+    }
+    .foo{
+        background: black;
+        color: white;
+    }
+    
+    .z{
+    color: red;
+    background: white;	
+    }
+    
+    .p{
+    font-family: fantasy;	
+    }
+    
+    
+    
+    #menu:hover{
+    background: #c0a0c3;	
+    
+    }
+    #header{
+        position: fixed;
+    }
+    
+    .read{
+        font-size: 50px;
+    background:  -webkit-linear-gradient(top,#AC132A  0%,  #db5c01 100%);
+        color: black;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    
+    .card:hover{
+        box-shadow: 0px 2px 90px #A4A4A4;
+        transform:scale(1.1);
+    }
+    
+    
+    .fooder{
+        background: #797D7F;
+    }
+    
+    .arte1{
+    
+        width: 100px;
+        height: 100px;
+    }

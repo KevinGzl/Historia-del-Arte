@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+   
+    <script>
+
+      $(document).ready(function(){
+        //creacion del mapa
+          const map= L.map('map').setView([13.696948823641879, -89.19941503091465],12);
+        //moisaico de capas
+        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+            maxZoom:20
+        }).addTo(map)
+
+        //creacion de marcador
+        const marker = L.marker([13.692730496987311, -89.24197224756875],{alt:'Museo de Arte'}).addTo(map).bindPopup('Museo de Arte de El Salvador');
+        const marker2 = L.marker([13.700674041219932, -89.22578324688962],{alt:'Museo de Forma'}).addTo(map).bindPopup('Museo de forma');
+        const marker3 = L.marker([13.677022920848893, -89.28438088624043],{alt:'Museo tecleño'}).addTo(map).bindPopup('Museo tecleño');
+        const marker4 = L.marker([13.713152183512644, -89.20427135650836],{alt:'Museo de la palbra y la imagen'}).addTo(map).bindPopup('Museo de la palabra y la imagen');
+        const marker5 = L.marker([13.707148454465688, -89.22075084819697],{alt:'Museo de escultura'}).addTo(map).bindPopup('Museo de escultura');
+        const marker6 = L.marker([13.6790414961733, -89.19720669335007],{alt:'Museo Historia'}).addTo(map).bindPopup('Museo de historia');
+        const marker7 = L.marker([13.691884154156048, -89.2384054225717],{alt:'Museo de antropologia'}).addTo(map).bindPopup('Museo de antropologia');
+        });
+        
+    </script>
+    <title>API</title>
+</head>
+<body class="b">
+ 
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" class="ini">
+  <a class="navbar-brand" href="#"><img src="multimedia/casa.jpg" width="90" height="90" class="casa"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="../index.html" id="menu">Inicio <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../conocenos.html" id="menu">Conocenos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../Contactanos.html" id="menu">Contactanos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../Retrato.html" id="menu">Retratos</a>
+      </li>
+      
+      <li class="nav-item dropdown">
+         
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu">
+          Artistas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="flor/suv.html" id="menu">Pablo Picasso</a>
+         <br>
+       <a class="dropdown-item" href="Pickup/index.html" id="menu">Vicent Van Gogh</a>
+       <br>
+        <a class="dropdown-item" href="sedan/index.html">Claude Monet</a>
+        <br>
+          <a class="dropdown-item" href="servicio de taller/servicio.html" id="menu">Salvador Dali</a>
+          <br>
+          <a class="dropdown-item" href="flor/suv.html" id="menu">Leonardo da Vinci</a>
+          <br>
+       <a class="dropdown-item" href="Pickup/index.html" id="menu">Rembrandt</a>
+       <br>
+        <a class="dropdown-item" href="sedan/index.html">caravaggio</a>
+        <br>
+
+        <a class="dropdown-item" href="servicio de taller/servicio.html" id="menu">Francisco de Goya</a>
+         
+       
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu">
+          Apis.
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+         <a class="dropdown-item" href="API1/index.html" id="menu">Api numero 1</a>
+         <br>
+         <a class="dropdown-item" href="API QR/Index.html" id="menu">Api numero 2</a>
+        <br>
+        <a class="dropdown-item" href="APi Geolocalizacion/APi Geolocalizacion/API Geo.html" id="menu">Api numero 3</a>
+        </li>
+  
+     
+    
+  
+   
+  
+    
+  </div>
+  
+  
+    </ul>
+     </div>
+  </nav>
+
+<center><h3 class="titulo">Mapa de Museos En El Salvador</h3><hr></center>
+
+<div style="width:50%; margin: auto; height: 400px;">
+<br>
+    <div id="map" style="margin:auto ; width:100%; height: 500px; border: solid black;">
+
+    </div>
+
+</div>
+    
+
+
+
+</body>
+</html>
